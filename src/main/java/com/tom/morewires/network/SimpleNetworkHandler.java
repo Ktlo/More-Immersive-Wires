@@ -16,7 +16,7 @@ import blusunrize.immersiveengineering.api.wires.localhandlers.IWorldTickable;
 import blusunrize.immersiveengineering.api.wires.localhandlers.LocalNetworkHandler;
 
 public abstract class SimpleNetworkHandler<C, T extends SimpleNetworkHandler<C, T>> extends LocalNetworkHandler implements IWorldTickable {
-	private Set<C> allConnectors = new HashSet<>();
+	protected Set<C> allConnectors = new HashSet<>();
 	private boolean needsUpdate = true;
 
 	protected SimpleNetworkHandler(LocalWireNetwork net, GlobalWireNetwork global) {

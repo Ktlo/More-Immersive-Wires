@@ -1,0 +1,46 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "computercraft",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "more_immersive_wires:oc2_coil"
+          ]
+        },
+        "criteria": {
+          "oc2_unlock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "oc2:network_cable"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "more_immersive_wires:oc2_coil"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "oc2_unlock",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

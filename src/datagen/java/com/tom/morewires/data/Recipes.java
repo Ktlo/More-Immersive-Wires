@@ -48,6 +48,7 @@ public class Recipes extends RecipeProvider {
 		RS(MoreImmersiveWires.RS_WIRE, CraftingIngredient.of(Tags.Items.STONE), CraftingIngredient.of(RSItems.QUARTZ_ENRICHED_IRON.get()), CraftingIngredient.of(RSBlocks.CABLE.get())),
 		ID(MoreImmersiveWires.ID_WIRE, CraftingIngredient.of(RegistryEntries.BLOCK_MENRIL_WOOD), CraftingIngredient.of("integrateddynamics:crystalized_menril_chunk"), CraftingIngredient.of(RegistryEntries.BLOCK_CABLE)),
 		CC(MoreImmersiveWires.CC_WIRE, CraftingIngredient.of(Tags.Items.STONE), CraftingIngredient.of(Items.REDSTONE), CraftingIngredient.of(Registry.ModItems.CABLE.get())),
+		OC2(MoreImmersiveWires.OC2_WIRE, CraftingIngredient.of(Tags.Items.INGOTS_IRON), CraftingIngredient.of("oc2:network_connector"), CraftingIngredient.of("oc2:network_cable")),
 		;
 		public final Wire wire;
 		public final CraftingIngredient baseItem, coreItem, cableItem, wireItem;

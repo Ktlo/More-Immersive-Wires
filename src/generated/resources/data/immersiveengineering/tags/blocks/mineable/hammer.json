@@ -44,6 +44,14 @@
     {
       "id": "more_immersive_wires:cc_modem",
       "required": false
+    },
+    {
+      "id": "more_immersive_wires:oc2_connector",
+      "required": false
+    },
+    {
+      "id": "more_immersive_wires:oc2_relay",
+      "required": false
     }
   ]
 }

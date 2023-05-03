@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+import com.tom.morewires.compat.oc2.OC2WireDefinition;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -71,11 +72,15 @@ public class MoreImmersiveWires {
 	public static final String ID = "integrateddynamics";
 	public static final String CC = "computercraft";
 
+	public static final String OC2 = "oc2";
+
 	public static final Wire AE_WIRE = new Wire("ae", AE, 0x331166, "ME Glass Cable", false, () -> AEWireDefinition::new);
 	public static final Wire AE_DENSE_WIRE = new Wire("ae_dense", AE, 0x220055, "ME Dense Cable", true, () -> AEDenseWireDefinition::new);
 	public static final Wire RS_WIRE = new Wire("rs", RS, 0x222222, "RS Cable", false, () -> RSWireDefinition::new);
 	public static final Wire ID_WIRE = new Wire("id", ID, 0x335566, "Logic Cable", false, () -> IntegratedDynamicsWireDefinition::new);
 	public static final Wire CC_WIRE = new Wire("cc", CC, 0x888888, "Networking Cable", false, () -> CCWireDefinition::new);
+
+	public static final Wire OC2_WIRE = new Wire("oc2", OC2, 0x5635fc, "Optic fiber", false, () -> OC2WireDefinition::new);
 
 	public static class Wire {
 		public final String name, localized, modid;

@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "oc2",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " c ",
+          "bcb"
+        ],
+        "key": {
+          "b": {
+            "tag": "forge:ingots/iron"
+          },
+          "c": {
+            "item": "oc2:network_connector"
+          }
+        },
+        "result": {
+          "item": "more_immersive_wires:oc2_relay",
+          "count": 8
+        }
+      }
+    }
+  ]
+}

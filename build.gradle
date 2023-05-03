@@ -157,13 +157,7 @@ repositories {
             includeGroup "curse.maven"
         }
     }
-    maven {
-    	url = "http://localhost:8000"
-		allowInsecureProtocol true
-		content {
-            includeGroup "local"
-        }
-	}
+    maven { url = 'https://maven.minecraftforge.net' }
 }
 
 dependencies {
@@ -185,20 +179,22 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
     
     // compile against the JEI API but do not include it at runtime
-    compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255:api")
+    //compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255:api")
   	// at runtime, use the full JEI jar
-  	runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255")
+  	//runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255")
   	
-    compileOnly fg.deobf('local:ImmersiveEngineering:1.18.2-8.4.0-161')
+    compileOnly fg.deobf('curse.maven:immersive-engineering-231951:4412849')
     compileOnly fg.deobf('curse.maven:applied-energistics-2-223794:4136407')
     compileOnly fg.deobf('curse.maven:refined-storage-243076:4392829')
     compileOnly fg.deobf('curse.maven:cc-tweaked-282001:4395618')
-    
-    compileOnly fg.deobf('local:IntegratedDynamics:1.18.2-1.13.3')
+
+    compileOnly fg.deobf('curse.maven:integrated-dynamics-236307:4445202')
     compileOnly fg.deobf('curse.maven:cyclops-core-232758:4422919')
     compileOnly fg.deobf('curse.maven:common-capabilities-247007:4391353')
-    
-    implementation fg.deobf("curse.maven:the-one-probe-245211:3965688")
+
+    compileOnly fg.deobf('curse.maven:oc2-437654:3896581')
+
+    //implementation fg.deobf("curse.maven:the-one-probe-245211:3965688")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
